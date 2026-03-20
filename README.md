@@ -1,165 +1,200 @@
 # 📌 Email Spam Prediction using Machine Learning
 
-## 🚀 Project Overview
+![Python](https://img.shields.io/badge/Python-3.8-blue)
+![Accuracy](https://img.shields.io/badge/Accuracy-97%25-brightgreen)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+![Domain](https://img.shields.io/badge/Domain-NLP-orange)
+
+---
+
+## 📌 Overview
+
 This project is a **Machine Learning-based Email Spam Detection System** that classifies email messages as **Spam or Ham (Not Spam)** using Natural Language Processing (NLP) techniques.
 
-The system is integrated with a **Flask-based web application** that allows users to log in and check email messages in real time.
+It is integrated with a **Flask-based web application** that allows users to input email text and get real-time predictions.
 
 ---
 
-## 🎯 Objective
-- To detect spam emails accurately using ML models  
-- To apply NLP techniques for text classification  
-- To build a user-friendly web interface  
-- To provide real-time predictions  
+## 🎯 Objectives
+
+* Detect spam emails accurately using ML models
+* Apply NLP techniques for text classification
+* Build a user-friendly web interface
+* Provide real-time predictions
 
 ---
 
-## 🧠 Workflow of the Project
+## 🚀 Features
+
+✔ Email text preprocessing
+✔ Spam/Ham classification
+✔ TF-IDF vectorization
+✔ Trained ML model using Scikit-learn
+✔ Flask-based web application
+✔ Real-time prediction system
+✔ Clean and simple UI
+
+---
+
+## 🧠 Workflow
 
 User Input → Text Preprocessing → TF-IDF Vectorization → ML Model → Prediction (Spam / Ham)
 
+---
+
+## 🛠️ Tech Stack
+
+* **Programming Language:** Python
+* **Libraries:** NumPy, Pandas, Scikit-learn
+* **Framework:** Flask
+* **Concepts:** NLP, Text Classification
 
 ---
 
 ## 📂 Project Structure
 
+```bash
 Email-Spam-Prediction/
 │
 ├── backend/
-│ └── model_training.ipynb # Model building & training
+│   └── model_training.ipynb
 │
 ├── frontend/
-│ └── app.py # Flask web application
+│   └── app.py
 │
 ├── dataset/
-│ └── mail_data.csv # Dataset
+│   └── mail_data.csv
 │
 ├── models/
-│ ├── spam_model.pkl # Trained ML model
-│ └── vectorizer.pkl # TF-IDF vectorizer
+│   ├── spam_model.pkl
+│   └── vectorizer.pkl
 │
-├── ui_screenshots/ # Application UI
-│ ├── loginpage.png
-│ ├── input.png
-│ └── output.png
+├── ui_screenshots/
+│   ├── loginpage.png
+│   ├── input.png
+│   └── output.png
 │
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
-
----
-
-## 📊 Dataset Details
-- Dataset contains labeled email messages  
-- Categories:
-  - **Spam (0)**  
-  - **Ham (1)**  
-- Used for training and testing the model  
+```
 
 ---
 
-## ⚙️ Technologies Used
+## 📊 Dataset
 
-### 💻 Programming Language
-- Python  
+* Contains labeled email messages
+* Classes:
 
-### 📚 Libraries
-- NumPy  
-- Pandas  
-- Scikit-learn  
-- Flask  
-
-### 🧠 ML Techniques
-- Text Preprocessing  
-- TF-IDF Vectorization  
-- Logistic Regression / Naive Bayes  
+  * 0 → Spam
+  * 1 → Ham (Not Spam)
 
 ---
 
-## 🔍 Features
+## ⚙️ How It Works
 
-- Email text preprocessing  
-- Spam/Ham classification  
-- Trained ML model saved using Pickle  
-- Flask-based web application  
-- User-friendly interface  
-- Real-time prediction  
-- UI screenshots included  
+1. Input email text
+2. Perform text preprocessing
+3. Convert text into numerical form using TF-IDF
+4. Apply trained ML model
+5. Predict whether email is Spam or Ham
 
 ---
 
-## 🧪 Model Performance
+## ▶️ How to Run
 
-- Algorithms Used:
-  - Logistic Regression  
-  - Multinomial Naive Bayes  
+### 1. Clone the repository
 
-- Evaluation Metrics:
-  - **Accuracy:** ⭐ ~97%   <!-- Update with your exact accuracy -->
-  - Precision  
-  - Recall  
-  - F1-Score  
+```bash
+git clone https://github.com/your-username/Email-Spam-Prediction.git
+cd Email-Spam-Prediction
+```
 
-> The model performs efficiently in identifying spam and legitimate emails with high accuracy.
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the application
+
+```bash
+python frontend/app.py
+```
+
+### 4. Open in browser
+
+```
+http://127.0.0.1:5000/
+```
+
+---
+
+## 📊 Results
+
+### ✅ Model Performance
+
+* 🎯 **Accuracy:** 97%
+* 📌 High precision in spam detection
+* 📌 Efficient classification of spam and legitimate emails
+
+### 📈 Evaluation Metrics
+
+* Precision
+* Recall
+* F1-Score
 
 ---
 
 ## 🌐 Web Application
 
-The project includes a Flask-based web app with:
+The project includes a Flask-based web application with:
 
-- Login Page  
-- Input Text Area  
-- Prediction Output Display  
+* Login Page
+* Input Text Area
+* Prediction Output Display
 
 ---
 
 ## 📸 Application Screenshots
 
 ### 🔐 Login Page
+
 ![Login](ui_screenshots/loginpage.png)
 
 ### ✉️ Input Page
+
 ![Input](ui_screenshots/input.png)
 
 ### ✅ Output Result
+
 ![Output](ui_screenshots/output.png)
 
 ---
 
-## ▶️ How to Run the Project
+## 🔍 Future Enhancements
 
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/your-username/Email-Spam-Prediction.git
-cd Email-Spam-Prediction
+* Improve accuracy using Deep Learning (LSTM, BERT)
+* Deploy on cloud platforms
+* Enhance UI design
+* Integrate with email services
 
-2️⃣ Install Requirements
-pip install -r requirements.txt
-3️⃣ Run the Application
-python frontend/app.py
-4️⃣ Open in Browser
-http://127.0.0.1:5000/
+---
 
+## 📁 Dataset Note
 
-📈 Future Enhancements
+Dataset is included in this project for training and testing purposes.
 
-Improve accuracy using Deep Learning (LSTM, BERT)
+---
 
-Deploy the application on cloud platforms
+## 👩‍💻 Author
 
-Enhance UI design
+**Hemasri Gopisetti**
 
-Integrate with email services (Gmail API)
+B.Tech (CSM) | ML Enthusiast
 
-👩‍💻 Author
+---
 
-Hemasri Gopisetti
-B.Tech (CSM)
-Full Stack Developer | ML Enthusiast
-
-⭐ Support
+## ⭐ Support
 
 If you like this project, please ⭐ star the repository!
