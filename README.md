@@ -106,7 +106,7 @@ Email-Spam-Prediction/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Email-Spam-Prediction.git
+git clone https://github.com/hemasrigopisetti/Email-Spam-Prediction.git
 cd Email-Spam-Prediction
 ```
 
@@ -120,12 +120,6 @@ pip install -r requirements.txt
 
 ```bash
 python frontend/app.py
-```
-
-### 4. Open in browser
-
-```
-http://127.0.0.1:5000/
 ```
 
 ---
